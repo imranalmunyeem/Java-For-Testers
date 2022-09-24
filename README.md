@@ -41,9 +41,13 @@
 
 ###  ⚫ Java Variables
         --- String - stores text, such as "Hello". String values are surrounded by double quotes
+        
         --- int - stores integers (whole numbers), without decimals, such as 123 or -123
+        
         --- float - stores floating point numbers, with decimals, such as 19.99 or -19.99
+        
         --- char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+        
         --- boolean - stores values with two states: true or false
 
 
@@ -60,10 +64,12 @@
               Example: package pokeranalyzer package mycalculator              
         --- In software companies and large projects where the packages might be imported into other classes, the names will normally be subdivided. Typically this will start with the company domain before being split into layers or features:
               Exampple: package com.mycompany.utilities package org.bobscompany.application.userinterface 
-              
+             
+             
 ###     Classes: 
         --- Names should be in CamelCase. Try to use nouns because a class is normally representing something in the real world:
               Example: class Customer class Account 
+ 
  
 ###     Interfaces: 
         --- Names should be in CamelCase. They tend to have a name that describes an operation that a class can do:
@@ -71,15 +77,18 @@
         --- Note that some programmers like to distinguish interfaces by beginning the name with an "I":
               Example: interface IComparable interface IEnumerable 
  
+ 
 ###     Methods: 
         --- Names should be in mixed case. Use verbs to describe what the method does:
               Example: void calculateTax() string getSurname() 
+ 
  
 ###     Variables: 
         --- Names should be in mixed case. The names should represent what the value of the variable represents:
               Example: string firstName int orderNumber 
         --- Only use very short names when the variables are short-lived, such as in for loops:
                         for (int i=0; i<20;i++) {   //i only lives in here } 
+ 
  
 ###     Constants: 
         --- Names should be in uppercase.
@@ -88,14 +97,19 @@
 
 ###  ⚫ Java Data Types
         --- Primitive data types: byte, short, int, long, float, double, boolean and char
+        
         --- Non-primitive data types - String, Arrays and Classes
 
 
 ###  ⚫ Difference between primitive and non-primitive data types
         --- Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for String).
+        
         --- Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.
+        
         --- A primitive type has always a value, while non-primitive types can be null.
+        
         --- A primitive type starts with a lowercase letter, while non-primitive types starts with an uppercase letter.
+        
         --- The size of a primitive type depends on the data type, while non-primitive types have all the same size.
 
 
@@ -108,20 +122,27 @@
                         double -> float -> long -> int -> char -> short -> byte
 
 
-
 ###  ⚫ Java Operators
         --- Arithmetic operators
+        
         --- Assignment operators
+        
         --- Comparison operators
+        
         --- Logical operators
+        
         --- Bitwise operators
 
 
 ###  ⚫ Escape sequences that are valid in Java
             \n	New Line	
+            
             \r	Carriage Return	
+            
             \t	Tab	
+            
             \b	Backspace	
+            
             \f	Form Feed
             
 
@@ -143,28 +164,44 @@
             To get more control over the random number, for example, if you only want a random number between 0 and 100, you can use the following formula:
                     int randomNum = (int)(Math.random() * 101);  // 0 to 100
 
+
 ###  ⚫ Java Conditions and If Statements
         Less than: a < b
+        
         Less than or equal to: a <= b
+        
         Greater than: a > b
+        
         Greater than or equal to: a >= b
+        
         Equal to a == b
+        
         Not Equal to: a != b
+        
         
 ###     Java has the following conditional statements:
         Use if to specify a block of code to be executed, if a specified condition is true
+        
         Use else to specify a block of code to be executed, if the same condition is false
+        
         Use else if to specify a new condition to test, if the first condition is false
+        
         Use switch to specify many alternative blocks of code to be executed
 
 
 ###  ⚫ Java Switch
         --- The switch expression is evaluated once.
+        
         --- The value of the expression is compared with the values of each case.
+        
         --- If there is a match, the associated block of code is executed.
+        
         --- When Java reaches a break keyword, it breaks out of the switch block. This will stop the execution of more code and case testing inside the block.
+        
         --- The default keyword specifies some code to run if there is no case match
+        
         --- If the default statement is used as the last statement in a switch block, it does not need a break.
+        
         
 ###    Syntax:
           switch(expression) {
@@ -183,6 +220,7 @@
               while (condition) {
                 // code block to be executed
                }
+               
 
 ###        Do-While Syntax:
               do {
@@ -190,25 +228,32 @@
               }
               while (condition);
               
+              
 ###        For Syntax:
               for (statement 1; statement 2; statement 3) {
                 // code block to be executed
               }
+              
               
 ###        For-Each Syntax:
               for (type variableName : arrayName) {
                 // code block to be executed
               }
               
+              
 ###  ⚫ Java Break and Continue
         --- The break statement can also be used to jump out of a loop.
+        
         --- The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
 
 
 ###  ⚫ Java Methods
         --- A method is a block of code which only runs when it is called.
+        
         --- You can pass data, known as parameters, into a method.
+        
         --- Methods are used to perform certain actions, and they are also known as functions.
+
 
 ### Create Method
           public class Main {
@@ -216,6 +261,7 @@
                 // code to be executed
               }
           }
+          
           
 ### Call method
           public class Main {
@@ -233,22 +279,23 @@
       --- Parameters are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
 
 
-
 ###  ⚫ Java Scope
         In Java, variables are only accessible inside the region they are created. This is called scope
         --- Method Scope: Variables declared directly inside a method are available anywhere in the method following the line of code in which they were declared
+        
         --- Block Scope:A block of code refers to all of the code between curly braces {}.
-
 
 
 ###  ⚫ Java OOP
         --- OOP is faster and easier to execute
+        
         --- OOP provides a clear structure for the programs
+        
         --- OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+        
         --- OOP makes it possible to create full reusable applications with less code and shorter development time
         
         
-
 ###  ⚫ Java Class, Object, Constructor 
 ###  Class
      --- User defined blueprint or prototype from which objects are created. It represents the set of properties or methods that are common to all objects of one type.
@@ -259,29 +306,41 @@
               int y = 3;
            }
          Here x and y are the attributes of the class. We can call it by creating an object of this class.  
-         
+              
+              
 ###  object
      --- Member (also called an instance) of a Java class. Each object has an identity, a behavior and a state.
+     
      
 ### Constructor 
     --- A block of codes similar to the method. It is called when an instance of the class is created. At the time of calling the constructor, memory for the object is allocated in the memory. It is a special type of method which is used to initialize the object. Every time an object is created using the new() keyword, at least one constructor is called.
         
+        
 ###  How Constructors are Different From Methods in Java? 
      --- Constructors must have the same name as the class within which it is defined while it is not necessary for the method in Java.
+     
      --- Constructors do not return any type while method(s) have the return type or void if does not return any value.
+     
      --- Constructors are called only once at the time of Object creation while method(s) can be called any number of times.        
+
 
 ###  When is a Constructor called? 
      --- Each time an object is created using a new() keyword, at least one constructor (it could be the default constructor) is invoked to assign initial values to the data members of the same class. 
 
+
 ###  The rules for writing constructors are as follows:
      --- Constructor(s) of a class must have the same name as the class name in which it resides.
+     
      --- A constructor in Java can not be abstract, final, static, or Synchronized.
+     
      --- Access modifiers can be used in constructor declaration to control its access i.e which other class can call the constructor.
+    
     
 ###  Types of Constructors in Java
         1. No-argument constructor: A constructor that has no parameter is known as the default constructor. If we don’t define a constructor in a class, then the compiler creates a default constructor(with no arguments) for the class.
+        
         2. Parameterized Constructor: A constructor that has parameters is known as parameterized constructor. If we want to initialize fields of the class with our own values, then use a parameterized constructor.
+        
         
 ###  Need of Constructor
      --- constructors are used to assign values to the class variables at the time of object creation, either explicitly done by the programmer or by Java itself (default constructor).
@@ -289,110 +348,167 @@
 
 ### ⚫ Inheritance: 
        --- one class aquires properties (methods and fields) of another class!
+       
        --- Why? For reusability
+       
        --- How? Using extends keyword
 
 Subclass (derived class or child class)
 Superclass (base class or parent class)
 
+
 ###    Types
         Single inheritance
+        
         Multilevel inheritance
+        
         Hierarchical inheritance
+        
         Multiple inheritance (using interface)
+
 
 ###    Important points
         - Subclass can have it's own methods and fields in addition to Superclass's methods and fields
+        
         - Subclass can have only one Superclass. In other words, multiple inheritance is not supported
+        
         - Subclass cannot inherit Superclass's constructor, but it can invoke the constructor
+        
         super keyword
-        - Used to differentiate members of Superclass from members of Subclass, if they have same names
-        - Used to invoke the constructor of Superclass from Subclass 
+            - Used to differentiate members of Superclass from members of Subclass, if they have same names
+        
+            - Used to invoke the constructor of Superclass from Subclass 
+        
         
 ### ⚫ Access modifiers
         public: Everywhere
+        
         protected: by class in same package or by sub class if outside package
+        
         private: Within class
+        
         default: by class in same package
+
 
 ###  Applicability
         Class: public, default
+        
         Attributes and methods: public, private, protected, default
+
 
 ### Important points
       - Use private for attributes unless there is a good reason not to do so
+      
       - Use public for constants
+      
       - Use protected if you want class members to be accessed by sub classes or by classes in the same package
+      
       - Use private if you think the method will be accessed only within the class        
+
 
 ### ⚫ Encapsulation: 
         --- wrapping up of data under a single unit! The data is protected!
 
+
 ###     How? 
         - By making class attributes (or variables) private
+        
         - By making methods as private
 
-Use getter and setter methods to access private attributes
+        - Use getter and setter methods to access private attributes
+
 
 ###     Advantages of Encapsulation
         - Data hiding
+        
         - Flexibility to use variable as read only or write only
+        
         - Reusability
 
 
 ### ⚫ Polymorphism: 
        --- Ability of an object to take many forms!
 
+
 ###    How? 
        --- By Overriding or Overloading methods.
 
+
 ###    Method Overriding
        - Allows a subclass to provide a specific implementation of a method that is already provided by its superclass 
+       
        - Method in subclass should have the same name, same signature, and same return type(or sub-type) as the method in its superclass
+
 
 ###     Method Overloading
        - Allows different methods to have the same name, but different signatures where the signature can differ by the number of input parameters or type of input parameters or both
 
+
 ###    Polymorphism Types
       - Runtime polymorphism or Dynamic method dispatch: Call resolved at runtime based on the type of the object being referred to at the time the call occurs E.g. Method Overriding
+      
       - Compile time polymorphism: Call resolved at compile time E.g. Method Overloading 
+
 
 ###    Notes
       - final methods cannot be overridden
+      
       - Static methods cannot be overridden (method hiding)
 
 
 ### ⚫ Abstraction: 
        --- Hide details and show only essential information!
 
+
 ###    Abstract class
        --- Provides partial abstraction
+       
        --- Abstract method is declared without implementation
+       
        --- Abstract class cannot be directly instantiated
+       
        --- Sub class can access Abstract class using extends keyword
+       
        --- Sub class must implement all abstract methods i.e. Overriding is compulsory
+       
        --- Abstract class can have parameterized constructor
+
 
 ###    Advantage of Abstract Class
        --- Reduces complexity by hiding implementation
+       
        --- Better viewing
+       
        --- Avoids code duplication and promotes reusability
+       
        --- Increases security by providing only important details to the user
+
 
 ###    Interface
        --- Provides complete abstraction (blueprint! - what to do and not how to do!)
+       
        --- Methods are by default abstract and public
+       
        --- Attributes are by default public, static and final. In other words, attributes are constants
+       
        --- Cannot contain constructor
+       
        --- Must be implemented by other class using implements keyword
+       
        --- Sub class must implement all abstract methods
+       
        --- Sub class can implement multiple interfaces
+       
        --- Java8: Can have default method
+       
        --- Java8: Can have static method
+
 
 ###    Advantages of Abstract Interface
        --- Reduces complexity by hiding implementation
+       
        --- Increases security by providing only important details to the user
+       
        --- Helps achieve multiple inheritanc
 
 
@@ -425,15 +541,19 @@ Use getter and setter methods to access private attributes
        
        --- IllegalStateException : This exception will throw an error or error message when the method is not accessed for the particular operation in the application. It comes under the unchecked exception.
 
+
 ###    User-Defined Exceptions
        --- Sometimes, the built-in exceptions in Java are not able to describe a certain situation. In such cases, the user can also create exceptions which are called ‘user-defined Exceptions’. 
+       
        
 ###    The user should create an exception class as a subclass of the Exception class. Since all the exceptions are subclasses of the Exception class, the user should also make his class a subclass of it. This is done as: 
           class MyException extends Exception
           
+          
 ###    We can write a default constructor in his own exception class. 
           MyException(){}
 ###    We can also create a parameterized constructor with a string as a parameter.
+
 
 ###    We can use this to store exception details. We can call the superclass(Exception) constructor from this and send the string there. 
           MyException(String str)
@@ -441,11 +561,11 @@ Use getter and setter methods to access private attributes
             super(str);
           }
           
+          
 ###    To raise an exception of a user-defined type, we need to create an object to his exception class and throw it using the throw clause, as: 
           MyException me = new MyException(“Exception details”);
             throw me;
             
-
 
 ### ⚫ File operations in Java
        --- Creation of a new file
@@ -454,6 +574,7 @@ Use getter and setter methods to access private attributes
        --- Writing to a file
        --- Closing a file
        --- deleting a file
+
 
 ### Java classes
         FileReader, BufferedReader, Files, Scanner, FileInputStream, FileWriter, BufferedWriter, FileOutputStream, etc.
@@ -472,13 +593,16 @@ Use getter and setter methods to access private attributes
         
         Note: Generics does not work with primitive types (int, float, char, etc).
         
+        
  ###   Java Generics Method
        --- Similar to the generics class, we can also create a method that can be used with any type of data. Such a class is known as Generics Method.
+       
        
 ###    Bounded Types
        --- In general, the type parameter can accept any data types (except primitive types).
        
        --- if we want to use generics for some specific types (such as accept data of number types) only, then we can use bounded types.
+
 
 ###   Advantages of Java Generics
 ###      1. Code Reusability
@@ -490,6 +614,7 @@ Use getter and setter methods to access private attributes
             // using Generics
                     GenericsClass<Integer> list = new GenericsClass<>();
               Here, we know that GenericsClass is working with Integer data only. Now, if we try to pass data other than Integer to this class, the program will generate an error at compile time.
+
 
 ###      3. Used with Collections
          --- The collections framework uses the concept of generics in Java. For example,
