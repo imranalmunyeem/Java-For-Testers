@@ -181,17 +181,11 @@
               myMethod();
            }
           }
-          
+   
+   
 ### ⚫ Parameters and Arguments
       --- Parameters are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
 
-
-
-
-
-###  ⚫ Java Method Overloading and overriding
-        --- With method overloading, multiple methods can have the same name with different parameters
-        --- If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
 
 
 ###  ⚫ Java Scope
@@ -206,6 +200,8 @@
         --- OOP provides a clear structure for the programs
         --- OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
         --- OOP makes it possible to create full reusable applications with less code and shorter development time
+        
+        
 
 ###  ⚫ Java Class, Object, Constructor 
 ###  Class
