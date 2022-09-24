@@ -348,7 +348,58 @@ Use getter and setter methods to access private attributes
        --- Reduces complexity by hiding implementation
        --- Increases security by providing only important details to the user
        --- Helps achieve multiple inheritanc
+
+
+### ⚫ Types of Exception in Java
+       --- ArithmeticException: It is thrown when an exceptional condition has occurred in an arithmetic operation.  
        
+       --- ArrayIndexOutOfBoundsException: It is thrown to indicate that an array has been accessed with an illegal index. The index is either negative or greater than or equal to the size of the array.
+       
+       --- ClassNotFoundException: This Exception is raised when we try to access a class whose definition is not found
+       
+       --- FileNotFoundException: This Exception is raised when a file is not accessible or does not open.
+       
+       --- IOException: It is thrown when an input-output operation failed or interrupted
+       
+       --- InterruptedException: It is thrown when a thread is waiting, sleeping, or doing some processing, and it is interrupted.
+       
+       --- NoSuchFieldException: It is thrown when a class does not contain the field (or variable) specified
+       
+       --- NoSuchMethodException: It is thrown when accessing a method that is not found.
+       
+       --- NullPointerException: This exception is raised when referring to the members of a null object. Null represents nothing
+       
+       --- NumberFormatException: This exception is raised when a method could not convert a string into a numeric format.
+       
+       --- RuntimeException: This represents an exception that occurs during runtime.
+       
+       --- StringIndexOutOfBoundsException: It is thrown by String class methods to indicate that an index is either negative or greater than the size of the string
+       
+       --- IllegalArgumentException : This exception will throw the error or error statement when the method receives an argument which is not accurately fit to the given relation or condition. It comes under the unchecked exception. 
+       
+       --- IllegalStateException : This exception will throw an error or error message when the method is not accessed for the particular operation in the application. It comes under the unchecked exception.
+
+###    User-Defined Exceptions
+       --- Sometimes, the built-in exceptions in Java are not able to describe a certain situation. In such cases, the user can also create exceptions which are called ‘user-defined Exceptions’. 
+       
+###    The user should create an exception class as a subclass of the Exception class. Since all the exceptions are subclasses of the Exception class, the user should also make his class a subclass of it. This is done as: 
+          class MyException extends Exception
+          
+###    We can write a default constructor in his own exception class. 
+          MyException(){}
+###    We can also create a parameterized constructor with a string as a parameter.
+
+###    We can use this to store exception details. We can call the superclass(Exception) constructor from this and send the string there. 
+          MyException(String str)
+          {
+            super(str);
+          }
+          
+###    To raise an exception of a user-defined type, we need to create an object to his exception class and throw it using the throw clause, as: 
+          MyException me = new MyException(“Exception details”);
+            throw me;
+            
+            
 ### ⚫  Notes:
       --- Static means that the method belongs to the Main class and not an object of the Main class. 
       --- void means that this method does not have a return value.
