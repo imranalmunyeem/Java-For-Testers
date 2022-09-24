@@ -244,7 +244,116 @@
 ###  Need of Constructor
      --- constructors are used to assign values to the class variables at the time of object creation, either explicitly done by the programmer or by Java itself (default constructor).
      
+
+### ⚫ Inheritance: 
+       --- one class aquires properties (methods and fields) of another class!
+       --- Why? For reusability
+       --- How? Using extends keyword
+
+Subclass (derived class or child class)
+Superclass (base class or parent class)
+
+###    Types
+        Single inheritance
+        Multilevel inheritance
+        Hierarchical inheritance
+        Multiple inheritance (using interface)
+
+###    Important points
+        - Subclass can have it's own methods and fields in addition to Superclass's methods and fields
+        - Subclass can have only one Superclass. In other words, multiple inheritance is not supported
+        - Subclass cannot inherit Superclass's constructor, but it can invoke the constructor
+        super keyword
+        - Used to differentiate members of Superclass from members of Subclass, if they have same names
+        - Used to invoke the constructor of Superclass from Subclass 
+        
+### ⚫ Access modifiers
+        public: Everywhere
+        protected: by class in same package or by sub class if outside package
+        private: Within class
+        default: by class in same package
+
+###  Applicability
+        Class: public, default
+        Attributes and methods: public, private, protected, default
+
+### Important points
+      - Use private for attributes unless there is a good reason not to do so
+      - Use public for constants
+      - Use protected if you want class members to be accessed by sub classes or by classes in the same package
+      - Use private if you think the method will be accessed only within the class        
+
+### ⚫ Encapsulation: 
+        --- wrapping up of data under a single unit! The data is protected!
+
+###     How? 
+        - By making class attributes (or variables) private
+        - By making methods as private
+
+Use getter and setter methods to access private attributes
+
+###     Advantages of Encapsulation
+        - Data hiding
+        - Flexibility to use variable as read only or write only
+        - Reusability
+
+
+### ⚫ Polymorphism: 
+       --- Ability of an object to take many forms!
+
+###    How? 
+       --- By Overriding or Overloading methods.
+
+###    Method Overriding
+       - Allows a subclass to provide a specific implementation of a method that is already provided by its superclass 
+       - Method in subclass should have the same name, same signature, and same return type(or sub-type) as the method in its superclass
+
+###     Method Overloading
+       - Allows different methods to have the same name, but different signatures where the signature can differ by the number of input parameters or type of input parameters or both
+
+###    Polymorphism Types
+      - Runtime polymorphism or Dynamic method dispatch: Call resolved at runtime based on the type of the object being referred to at the time the call occurs E.g. Method Overriding
+      - Compile time polymorphism: Call resolved at compile time E.g. Method Overloading 
+
+###    Notes
+      - final methods cannot be overridden
+      - Static methods cannot be overridden (method hiding)
+
+
+### ⚫ Abstraction: 
+       --- Hide details and show only essential information!
+
+###    Abstract class
+       --- Provides partial abstraction
+       --- Abstract method is declared without implementation
+       --- Abstract class cannot be directly instantiated
+       --- Sub class can access Abstract class using extends keyword
+       --- Sub class must implement all abstract methods i.e. Overriding is compulsory
+       --- Abstract class can have parameterized constructor
+
+###    Advantage of Abstract Class
+       --- Reduces complexity by hiding implementation
+       --- Better viewing
+       --- Avoids code duplication and promotes reusability
+       --- Increases security by providing only important details to the user
+
+###    Interface
+       --- Provides complete abstraction (blueprint! - what to do and not how to do!)
+       --- Methods are by default abstract and public
+       --- Attributes are by default public, static and final. In other words, attributes are constants
+       --- Cannot contain constructor
+       --- Must be implemented by other class using implements keyword
+       --- Sub class must implement all abstract methods
+       --- Sub class can implement multiple interfaces
+       --- Java8: Can have default method
+       --- Java8: Can have static method
+
+###    Advantages of Abstract Interface
+       --- Reduces complexity by hiding implementation
+       --- Increases security by providing only important details to the user
+       --- Helps achieve multiple inheritanc
+       
 ### ⚫  Notes:
       --- Static means that the method belongs to the Main class and not an object of the Main class. 
       --- void means that this method does not have a return value.
-      --- If you want the method to return a value, you can use a primitive data type (such as int, char, etc.) instead of void, and use the return keyword inside the method.
+      --- If you want the method to return a value, you can use a primitive data type (such as int, char, etc.) instead of void, and use the return keyword inside the method.        
