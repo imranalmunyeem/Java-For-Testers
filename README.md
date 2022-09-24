@@ -47,20 +47,44 @@
         --- boolean - stores values with two states: true or false
 
 
-###  ⚫ Final Variables
+###     Final Variables
         --- If you don't want others (or yourself) to overwrite existing values, use the final keyword (this will declare the variable as "final" or "constant", which means unchangeable and read-only)
         Example: 
               final int myNum = 15;
               myNum = 20;  // will generate an error: cannot assign a value to a final variable
 
 
-###  ⚫ Rules for naming variables
-        --- Names can contain letters, digits, underscores, and dollar signs
-        --- Names must begin with a letter
-        --- Names should start with a lowercase letter and it cannot contain whitespace
-        --- Names can also begin with $ and _ (but we will not use it in this tutorial)
-        --- Names are case sensitive ("myVar" and "myvar" are different variables)
-        --- Reserved words (like Java keywords, such as int or boolean) cannot be used as names
+###  ⚫ Naming Conventions
+###     Packages: 
+        --- Names should be in lowercase. With small projects that only have a few packages it's okay to just give them simple (but meaningful!) 
+              Example: package pokeranalyzer package mycalculator              
+        --- In software companies and large projects where the packages might be imported into other classes, the names will normally be subdivided. Typically this will start with the company domain before being split into layers or features:
+              Exampple: package com.mycompany.utilities package org.bobscompany.application.userinterface 
+              
+###     Classes: 
+        --- Names should be in CamelCase. Try to use nouns because a class is normally representing something in the real world:
+ class Customer class Account 
+ 
+###     Interfaces: 
+        --- Names should be in CamelCase. They tend to have a name that describes an operation that a class can do:
+              Example: interface Comparable interface Enumerable               
+        --- Note that some programmers like to distinguish interfaces by beginning the name with an "I":
+              Example: interface IComparable interface IEnumerable 
+ 
+###     Methods: 
+        --- Names should be in mixed case. Use verbs to describe what the method does:
+              Example: void calculateTax() string getSurname() 
+ 
+###     Variables: 
+        --- Names should be in mixed case. The names should represent what the value of the variable represents:
+              Example: string firstName int orderNumber 
+        --- Only use very short names when the variables are short-lived, such as in for loops:
+                        for (int i=0; i<20;i++) {   //i only lives in here } 
+ 
+###     Constants: 
+        --- Names should be in uppercase.
+             Example: static final int DEFAULT_WIDTH static final int MAX_HEIGHT 
+
 
 ###  ⚫ Java Data Types
         --- Primitive data types: byte, short, int, long, float, double, boolean and char
