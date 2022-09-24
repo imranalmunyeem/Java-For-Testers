@@ -157,3 +157,94 @@
 ###  ⚫ Java Break and Continue
         --- The break statement can also be used to jump out of a loop.
         --- The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+
+###  ⚫ Java Methods
+        --- A method is a block of code which only runs when it is called.
+        --- You can pass data, known as parameters, into a method.
+        --- Methods are used to perform certain actions, and they are also known as functions.
+
+### Create Method
+          public class Main {
+              static void myMethod() {
+                // code to be executed
+              }
+          }
+          
+### Call method
+          public class Main {
+              static void myMethod() {
+              System.out.println("I just got executed!");
+              }
+
+          public static void main(String[] args) {
+              myMethod();
+           }
+          }
+          
+### ⚫ Parameters and Arguments
+      --- Parameters are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+
+
+
+
+
+###  ⚫ Java Method Overloading and overriding
+        --- With method overloading, multiple methods can have the same name with different parameters
+        --- If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+
+
+###  ⚫ Java Scope
+        In Java, variables are only accessible inside the region they are created. This is called scope
+        --- Method Scope: Variables declared directly inside a method are available anywhere in the method following the line of code in which they were declared
+        --- Block Scope:A block of code refers to all of the code between curly braces {}.
+
+
+
+###  ⚫ Java OOP
+        --- OOP is faster and easier to execute
+        --- OOP provides a clear structure for the programs
+        --- OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+        --- OOP makes it possible to create full reusable applications with less code and shorter development time
+
+###  ⚫ Java Class, Object, Constructor 
+###  Class
+     --- User defined blueprint or prototype from which objects are created. It represents the set of properties or methods that are common to all objects of one type.
+
+### Java Class Attributes
+          public class numbers {
+              int x = 5;
+              int y = 3;
+           }
+         Here x and y are the attributes of the class. We can call it by creating an object of this class.  
+         
+###  object
+     --- Member (also called an instance) of a Java class. Each object has an identity, a behavior and a state.
+     
+### Constructor 
+    --- A block of codes similar to the method. It is called when an instance of the class is created. At the time of calling the constructor, memory for the object is allocated in the memory. It is a special type of method which is used to initialize the object. Every time an object is created using the new() keyword, at least one constructor is called.
+        
+###  How Constructors are Different From Methods in Java? 
+     --- Constructors must have the same name as the class within which it is defined while it is not necessary for the method in Java.
+     --- Constructors do not return any type while method(s) have the return type or void if does not return any value.
+     --- Constructors are called only once at the time of Object creation while method(s) can be called any number of times.        
+
+###  When is a Constructor called? 
+     --- Each time an object is created using a new() keyword, at least one constructor (it could be the default constructor) is invoked to assign initial values to the data members of the same class. 
+
+###  The rules for writing constructors are as follows:
+     --- Constructor(s) of a class must have the same name as the class name in which it resides.
+     --- A constructor in Java can not be abstract, final, static, or Synchronized.
+     --- Access modifiers can be used in constructor declaration to control its access i.e which other class can call the constructor.
+    
+###  Types of Constructors in Java
+        1. No-argument constructor: A constructor that has no parameter is known as the default constructor. If we don’t define a constructor in a class, then the compiler creates a default constructor(with no arguments) for the class.
+        2. Parameterized Constructor: A constructor that has parameters is known as parameterized constructor. If we want to initialize fields of the class with our own values, then use a parameterized constructor.
+        
+###  Need of Constructor
+     --- constructors are used to assign values to the class variables at the time of object creation, either explicitly done by the programmer or by Java itself (default constructor).
+     
+### ⚫  Notes:
+      --- Static means that the method belongs to the Main class and not an object of the Main class. 
+      --- void means that this method does not have a return value.
+      --- If you want the method to return a value, you can use a primitive data type (such as int, char, etc.) instead of void, and use the return keyword inside the method.
