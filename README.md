@@ -63,7 +63,7 @@
               
 ###     Classes: 
         --- Names should be in CamelCase. Try to use nouns because a class is normally representing something in the real world:
- class Customer class Account 
+              Example: class Customer class Account 
  
 ###     Interfaces: 
         --- Names should be in CamelCase. They tend to have a name that describes an operation that a class can do:
