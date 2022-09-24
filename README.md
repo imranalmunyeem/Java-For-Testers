@@ -440,7 +440,42 @@ Use getter and setter methods to access private attributes
        --- use relative file path (File seperator)
 
 
+### ⚫ Java Generics 
+###    Java Generic Class
+        --- The Java Generics allows us to create a single class, interface, and method that can be used with different types of data (objects).
+        
+        --- We can create a class that can be used with any type of data. Such a class is known as Generics Class.
+        
+        Note: Generics does not work with primitive types (int, float, char, etc).
+        
+ ###   Java Generics Method
+       --- Similar to the generics class, we can also create a method that can be used with any type of data. Such a class is known as Generics Method.
+       
+###    Bounded Types
+       --- In general, the type parameter can accept any data types (except primitive types).
+       
+       --- if we want to use generics for some specific types (such as accept data of number types) only, then we can use bounded types.
 
+###   Advantages of Java Generics
+###      1. Code Reusability
+         --- With the help of generics in Java, we can write code that will work with different types of data. For example,
+                    public <T> void genericsMethod(T data) {...}
+             Here, we have created a generics method. This same method can be used to perform operations on integer data, string data, and so on.
+
+###      2. Compile-time Type Checking
+            // using Generics
+                    GenericsClass<Integer> list = new GenericsClass<>();
+              Here, we know that GenericsClass is working with Integer data only. Now, if we try to pass data other than Integer to this class, the program will generate an error at compile time.
+
+###      3. Used with Collections
+         --- The collections framework uses the concept of generics in Java. For example,
+            // creating a string type ArrayList
+                    ArrayList<String> list1 = new ArrayList<>();
+            // creating a integer type ArrayList
+                    ArrayList<Integer> list2 = new ArrayList<>();
+              In the above example, we have used the same ArrayList class to work with different types of data.
+              
+              
 ### ⚫  Notes:
       --- Static means that the method belongs to the Main class and not an object of the Main class. 
       --- void means that this method does not have a return value.
