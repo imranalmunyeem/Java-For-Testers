@@ -399,7 +399,26 @@ Use getter and setter methods to access private attributes
           MyException me = new MyException(“Exception details”);
             throw me;
             
-            
+
+
+### ⚫ File operations in Java
+       --- Creation of a new file
+       --- Opening an existing file
+       --- Reading from file
+       --- Writing to a file
+       --- Closing a file
+       --- deleting a file
+
+### Java classes
+        FileReader, BufferedReader, Files, Scanner, FileInputStream, FileWriter, BufferedWriter, FileOutputStream, etc.
+       --- Create file
+       --- read file properties
+       --- read and write file using FileReader and FileWriter
+       --- read and write file using FileInputStream and FileOutputStream
+       --- use relative file path (File seperator)
+
+
+
 ### ⚫  Notes:
       --- Static means that the method belongs to the Main class and not an object of the Main class. 
       --- void means that this method does not have a return value.
