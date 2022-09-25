@@ -344,7 +344,11 @@
         
 ###  Need of Constructor
      --- constructors are used to assign values to the class variables at the time of object creation, either explicitly done by the programmer or by Java itself (default constructor).
-     
+ 
+
+### ⚫ Java Wrapper Class:
+        --- The wrapper classes in Java are used to convert primitive types (int, char, float, etc) into corresponding objects.
+
 
 ### ⚫ Inheritance: 
        --- one class aquires properties (methods and fields) of another class!
