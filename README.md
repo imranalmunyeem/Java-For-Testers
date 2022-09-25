@@ -342,14 +342,34 @@
         2. Parameterized Constructor: A constructor that has parameters is known as parameterized constructor. If we want to initialize fields of the class with our own values, then use a parameterized constructor.
         
         
+        
 ###  Need of Constructor
      --- constructors are used to assign values to the class variables at the time of object creation, either explicitly done by the programmer or by Java itself (default constructor).
+ 
  
 
 ### ⚫ Java Wrapper Class:
         --- The wrapper classes in Java are used to convert primitive types (int, char, float, etc) into corresponding objects.
 
+###    Advantages of Wrapper Classes
+       --- In Java, sometimes we might need to use objects instead of primitive data types. For example, while working with collections.
+###    Example: 
+                // error
+            ArrayList<int> list = new ArrayList<>();
+                // runs perfectly
+            ArrayList<Integer> list = new ArrayList<>();
+            
+       --- We can store the null value in wrapper objects.
+###        Example:
+                // generates an error
+                    int a = null;
+                // runs perfectly
+                    Integer a = null;
 
+        Note: Primitive types are more efficient than corresponding objects. Hence, when efficiency is the requirement, it is always recommended primitive types.
+        
+        
+        
 ### ⚫ Inheritance: 
        --- one class aquires properties (methods and fields) of another class!
        
